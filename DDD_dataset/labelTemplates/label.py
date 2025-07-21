@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def create_label_files(template_file_name="template.txt"):
     """
     Creates a copy of a template text file for each PNG image in the current directory,
@@ -38,6 +39,7 @@ def create_label_files(template_file_name="template.txt"):
                 print(f"Copied '{template_file_name}' to '{destination_path}'")
             except Exception as e:
                 print(f"Error copying file for {filename}: {e}")
+
 
 # Call the function to run the script
 if __name__ == "__main__":

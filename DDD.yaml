@@ -8,5 +8,5 @@ test: # Optional path to test images
 
 # Classes
 names:
-    0: awake
-    1: drowsy
+  0: awake
+  1: drowsy
