@@ -1,0 +1,3 @@
+put the template under the image folder, name it "template.txt"
+run label.py
+the labels of YOLO format will be auto generated under labels folder
