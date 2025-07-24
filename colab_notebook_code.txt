@@ -1,0 +1,28 @@
+# install autodistill
+!pip install -q \
+  autodistill \
+  autodistill-grounded-sam \
+  autodistill-yolov8 \
+  roboflow \
+  supervision==0.24.0
+
+import os
+HOME = os.getcwd()
+print(HOME)
+
+# directory for images (#SUBJECT_TO_CHANGE)
+!mkdir {HOME}/images
+
+# clone github repo (including the dataset)
+!git clone https://github.com/TeslaAngel/yolov5_drowsiness_detection.git
+
+# display image sample
+import supervision as sv
+
+image_paths = sv.list_files_with_extensions(
+    directory=IMAGE_DIR_PATH,
+    extensions=["png", "jpg", "jpg"])
+
+print('image count:', len(image_paths))
+
+# autolabel the dataset
