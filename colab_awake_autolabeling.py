@@ -97,9 +97,9 @@ sv.plot_images_grid(
 # target training model
 %cd {HOME}
 
-from autodistill_yolov8 import YOLOv8
+from autodistill_yolov5 import YOLOv5
 
-target_model = YOLOv8("yolov8n.pt")
+target_model = YOLOv5("yolov5l6.pt")
 target_model.train(DATA_YAML_PATH, epochs=50)
 
 # Fix intermittent Colab bug. You may not need this.
