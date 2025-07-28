@@ -130,3 +130,5 @@ Image(filename=f'{HOME}/runs/detect/train/results.png', width=600)
 from IPython.display import Image
 
 Image(filename=f'{HOME}/runs/detect/train/val_batch0_pred.jpg', width=600)
+
+# the final weight is at f"{HOME}/runs/detect/train/weights/best.pt"
