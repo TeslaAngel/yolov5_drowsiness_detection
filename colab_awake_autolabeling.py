@@ -1,3 +1,6 @@
+# clone github repo (including the dataset)
+!git clone https://github.com/TeslaAngel/yolov5_drowsiness_detection.git
+
 # install autodistill
 !pip install -q \
   autodistill \
@@ -13,12 +16,9 @@ print(HOME)
 # NOW LABELING AWAKE IMAGES
 
 # directory for "awake" images (#SUBJECT_TO_CHANGE)
-IMAGE_DIR_PATH = f"{HOME}/DDD_dataset/NonDrowsy/images"
+IMAGE_DIR_PATH = f"{HOME}/yolov5_drowsiness_detection/DDD_dataset/NonDrowsy/images"
 #!mkdir {HOME}/images
 #IMAGE_DIR_PATH = f"{HOME}/images"
-
-# clone github repo (including the dataset)
-!git clone https://github.com/TeslaAngel/yolov5_drowsiness_detection.git
 
 # display image sample
 import supervision as sv
