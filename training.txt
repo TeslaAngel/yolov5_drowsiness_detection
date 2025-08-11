@@ -1,3 +1,5 @@
 python train.py --img 10000 --batch 16 --epochs 8 --data DDD.yaml --weights yolov5s.pt
 
 python train.py --img 1000 --batch 16 --epochs 2 --data DDD.yaml --weights drowsiness.pt
+
+python train.py --data data.yaml --epochs 2 --weights drowsiness.pt --cfg yolov5l6.yaml --batch-size -1 --img 1280
