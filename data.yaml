@@ -3,5 +3,5 @@ names:
     0: awake
     1: drowsy
 nc: 2
-train: yolov5/train/images
-val: yolov5/valid/images
+train: dataset/train/images
+val: dataset/valid/images
