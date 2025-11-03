@@ -1,7 +1,7 @@
 # Classes
 names:
-    0: awake
-    1: drowsy
+  0: awake
+  1: drowsy
 nc: 2
 train: dataset/train/images
 val: dataset/valid/images
